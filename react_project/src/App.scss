@@ -1,58 +1,19 @@
 .App {
+  margin: 0;
+  padding: 0;
   text-align: center;
-  
+  background-image: url("https://garden.spoonflower.com/c/10436957/p/f/m/2U-RMRnRqgT9ZqFGalf49bs1DJAlrx2PcyLYMivOnXkcVRn_FVQRNIDMxQ/Paw%20prints%20light%20blue%20-%20small%20scale.jpg");
+   width: 100%;
+   height:100%;
+   min-height: 100vh;
 
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-$grbg:lightgray;
-$blackbg:black;
-
-#main{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  height: 550px;
-  background-color: $grbg;
-  
-  
-}
-#form{
-margin: 2%;
-width: 46%;
-height: 70%;
-background-color: white;
-border-radius: 5%;
-box-shadow: 5px 5px 5px 5px grey;
-
-}
-img{
-  width: 90%;
-  height: 550px;
-}
-
-input{
-  width: 60%;
-  height: auto;
-  border-radius: 10%;
-  margin: 2%;
-}
-button{
-  width: 30%;
-  height: auto;
-  border-radius: 10%;
-  margin: 2%;
-  color: white;
-  background-color: $blackbg;
 }
 
 
