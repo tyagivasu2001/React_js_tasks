@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.scss'
 import Navbar from '../components/Navbar'
  const Home=()=>{
+ 
  return(
    <div>
     <Navbar name="Home"/>
@@ -28,7 +29,9 @@ import Navbar from '../components/Navbar'
       product 4 <br />
        <a href='#'>Buy</a>
     </div>
+      
     </div>
+    
    
  );
 }

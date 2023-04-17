@@ -5,24 +5,29 @@ import  Home from './files/pages/Home';
 import  About from './files/pages/About';
 import Contact from './files/pages/Contact'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import store from"./redux/store"
+import {Provider} from "react-redux";
 
 
 
 function App() {
   return (
+    <Provider store={store}>
     <div className="App">
+      
       <Router>
         <Routes>
-        <Route exact path='/' Component={Login} />
-        <Route exact path='/home' Component={Home} />
-        <Route exact path='/about' Component={About} />
-        <Route exact path='/contact' Component={Contact} />
-        <Route exact path='/singup' Component={Signup} />
+        <Route  path='/' Component={Login} />
+        <Route  path='/home' Component={Home} />
+        <Route  path='/about' Component={About} />
+        <Route  path='/contact' Component={Contact} />
+        <Route  path='/singup' Component={Signup} />
         
         </Routes>
       </Router>
         
     </div>
+    </Provider>
   );
 }
 
