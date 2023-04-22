@@ -1,7 +1,9 @@
-import React from 'react'
-function useCount(count) {
-    count=count+1;
-    return count; 
-}
+// import React, { useEffect } from 'react'
+// function useCount() {
+//     useEffect(()=>{
+//         count=count+1;
+//     })
+//     return count;
+// }
 
-export default useCount
+// export default useCount;

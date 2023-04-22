@@ -12,6 +12,10 @@
   padding: 5%;
 }
 
+.star {
+  color: rgb(136, 136, 3);
+}
+
 #img {
   height: 200px;
   width: 250px;

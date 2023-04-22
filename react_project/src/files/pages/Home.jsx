@@ -4,22 +4,29 @@ import Navbar from "../components/Navbar";
 import Product from "../components/product";
 import { useNavigate } from "react-router-dom";
 
+
 const Home = () => {
   const nav = useNavigate();
   let dummy = [
     { id:1,
+      rating:4.5,
+      review:400,
       name: "Enzyme Miracle",
       src: "https://cdn.shopify.com/s/files/1/0058/2647/8126/products/enzyme-miracle-main_1512x.jpg?v=1649202776",
       alt: "product image",
       disc: "Enzymes completely digest to your pet's food, helping break up proteins, fats, and starches into usable nutrients. Complete digestion is known to reduce toxins, yeast, fungi, and bacteria that tend to build up over time. Improve digestion is linked with  Improved elimination and digestive regularity.",
     },
     { id:2,
+      rating:4.0,
+      review:800,
       name: "petVit",
       src: "https://cdn.shopify.com/s/files/1/0565/8021/0861/products/Frame1_0e02ac88-1b01-4373-a909-8ea38f50ab5f.png?v=1655878940",
       alt: "product image",
       disc: "Petvit Calming tablets helps in Travelling stress, Motion sickness, Stress induced behavioural problems (during fireworks, excessive barking and aggression) Grooming stress. Petvit Calming tablets contain Chamomile proven stress reliever that promotes general relaxation.",
     },
     { id:3,
+      rating:3.5,
+      review:700,
       name: "canniVin",
       src: "https://www.furballstory.com/wp-content/uploads/2023/01/4-2.jpg",
       alt: "product image",
@@ -35,7 +42,7 @@ const Home = () => {
       <Navbar name="Home" />
       <div className="product">
         {dummy.map((pro) => (
-            <Product 
+            <Product key={pro.id}
               name={pro.name}
               src={pro.src}
               alt={pro.alt}
@@ -49,3 +56,4 @@ const Home = () => {
   );
 };
 export default Home;
+

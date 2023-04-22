@@ -30,7 +30,7 @@
 @media (max-width: 600px) {
   .hamburger-menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     box-shadow: 3px 3px 3px 3px grey;
     height: 30px;
     background-color: rgb(150, 174, 166);
