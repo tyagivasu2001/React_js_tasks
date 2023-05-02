@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 const Product = (props) => {
   return (
     <div >
-      <h1>{props.name}</h1>s
+      <h1>{props.name}</h1>
       <img id="img" src={props.src} alt={props.alt}/>
       <p>{props.disc}</p>
       <button onClick={()=>props.handleproduct(props.id)}>Buy</button>

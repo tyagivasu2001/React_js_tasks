@@ -1,12 +1,10 @@
-.container{
-    display: flex;
-    flex-direction: row;
-    margin: 1%;
+.navbar{
+   text-align: center; 
+   width: 100%;
+   
 }
 .product{
-    margin-top: 2%;
-    margin-left: 20%;
-    margin-right: 20%;
+    text-align: center;
     background-color:white;
     padding: 5%;
 }
@@ -14,6 +12,55 @@
     color: rgb(136, 136, 3);
 }
 #img{
-    height: 200px;
-    width: 250px;
+    height: 150px;
+    width: 200px;
+}
+#flex{
+    display:flex;
+    gap: 2px;
+    width: 100%;
+}
+#filter{
+    width: 40%;
+    border-right: 3px solid black;
+    background-color: white;
+    text-align: start;
+
+}
+#value{
+    display: flex;
+}
+.menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    box-shadow: 3px 3px 3px 3px grey;
+}
+.hamburger-menu {
+    display: none;
+}
+
+
+
+@media(max-width:600px) {
+    .hamburger-menu {
+        display: flex;
+        justify-content: space-between;
+
+        box-shadow: 3px 3px 3px 3px grey;
+        height: 30px;
+        
+    }
+    .menu{
+        display: none;
+    }
+    .active{
+        display: flex;
+        flex-direction: column;
+        //border: 2px solid black;
+        // height: 30px;
+        width:100%;
+        
+    }
 }

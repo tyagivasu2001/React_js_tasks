@@ -24,7 +24,7 @@ const Navbar = (props) => {
         <NavLink className="list" to="/contact">
           Contact Us
         </NavLink>
-        <div>User:{data.Data.token}</div>
+        {/* <div>User:{data.Data.token}</div> */}
       </div>
     </div>
   );

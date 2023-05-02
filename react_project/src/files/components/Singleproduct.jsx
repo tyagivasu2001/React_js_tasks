@@ -9,7 +9,7 @@ function Singleproduct() {
   const arr = loc.state.dummy;
   
   return (
-    <div>
+    <div style={{textAlign:"center"}}>
       {arr.map((i) => {
         if (i.id == parms.id) {
           return (

@@ -1,6 +1,7 @@
 import React from 'react'
 import {FaStar,FaStarHalfAlt} from 'react-icons/fa';
 import {AiOutlineStar} from 'react-icons/ai'
+import PropTypes from 'prop-types';
 
 const StartRating = (prop) => {
     
@@ -21,3 +22,7 @@ return <div >{ratingarr} <b>{prop.review}</b> </div>
 };
 
 export default StartRating;
+StartRating.propTypes={
+    rating:PropTypes.number,
+    review:PropTypes.number
+}
